@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { useEffect, useRef, useState } from 'react'
+import { useState, useEffect, useRef, useId } from 'react'
 
 function AddProduct() {
   const navigate = useNavigate()
@@ -35,4 +33,5 @@ function AddProduct() {
       .then((res) => res.json())
       .then(() => navigate('/products'))
   }
-export default AddProduct }
+}
+export default AddProduct
